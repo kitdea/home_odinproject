@@ -132,3 +132,25 @@ body {
   border-radius: 1rem;
   cursor: pointer;
 }
+
+/* Projects Section */
+.op__listbox-container {
+  padding: 5rem 0;
+}
+
+.op__listbox-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.op__listbox-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.op__listbox-box img {
+  width: 260px;
+  height: 200px;
+}
