@@ -26,7 +26,7 @@ body {
 
 .op__nav-header {
   color: #E5E7EB;
-  background-color: #1F2937;
+  background-color: #445264;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,7 +69,7 @@ body {
 /* Hero Banner section */
 .op__hero-banner {
   color: #E5E7EB;
-  background-color: #1F2937;
+  background-color: #445264;
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -123,30 +123,39 @@ body {
 .op__hero-img img {
   width: 100%;
   max-width: 500px;
+  border-radius: 1rem;
 }
 
 .op__hero-button {
   font-size: 1.2rem;
-  color: #fff;
-  background-color: #3882F6;
+  color: #000000;
+  background-color: #ffffff;
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
 /* Projects Section */
 .op__listbox-container {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 .op__listbox-projects {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.op__listbox-box {
+  text-align: center;
+}
+
 .op__listbox-title {
+  padding: 0 1rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -154,4 +163,43 @@ body {
 .op__listbox-box img {
   width: 260px;
   height: 200px;
+  box-shadow: 5px 5px 10px #1f293756;
+  border-radius: 1rem;
+}
+
+/* Testimonial Section */
+.op__testimonial {
+  background-color: #E5E7EB;
+}
+
+.op__testimonial-container {
+  margin: 0 auto;
+  display: flex;
+  padding: 5rem 1rem;
+}
+
+.op__testimonial-box {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin: 0 auto;
+}
+
+.op__testimonial-box h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.op__testimonial-box p {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .op__testimonial-box {
+    text-align: center;
+  }
+
+  .op__testimonial-box h2 {
+    font-size: 1.3rem;
+  }
 }
