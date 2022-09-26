@@ -42,8 +42,13 @@ body {
   padding: 1rem ;
 }
 
+.op__nav-container span {
+  font-weight: 100;
+}
+
 .op__nav-header h2 {
   font-size: 24px;
+  font-weight: 600;
   color: #F9FAF8;
   padding: 1rem;
 }
@@ -70,26 +75,28 @@ body {
 .op__hero-banner {
   color: #E5E7EB;
   background-color: #445264;
-  height: 500px;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .op__hero-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 10rem 1rem;
 }
 
 @media screen and (max-width: 1000px) {
   .op__hero-container {
     flex-direction: column;
+    padding: 5rem 1rem;
   }
-  .op__hero-banner {
-    height: 700px;
-  }
+
+  .op__hero-title h1 {
+    font-size: 2rem !important;
+    line-height: 2.4rem !important;
+  }  
 }
 
 .op__hero-title {
@@ -98,8 +105,9 @@ body {
 }
 
 .op__hero-title h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 3.4rem;
   color: #F9FAF8;
 }
 
@@ -139,7 +147,7 @@ body {
 
 /* Projects Section */
 .op__listbox-container {
-  padding: 5rem 1rem;
+  padding: 10rem 1rem;
 }
 
 .op__listbox-projects {
@@ -165,6 +173,23 @@ body {
   height: 200px;
   box-shadow: 5px 5px 10px #1f293756;
   border-radius: 1rem;
+  transition: transform .3s ease-in-out;
+}
+
+.op__listbox-box:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .op__listbox-container {
+    padding: 5rem 1rem;
+  }
+}
+
+.gallery-text {
+  color: #fff;
+  background-color: #747474;
+  padding: 0.6rem;
 }
 
 /* Testimonial Section */
@@ -175,7 +200,7 @@ body {
 .op__testimonial-container {
   margin: 0 auto;
   display: flex;
-  padding: 5rem 1rem;
+  padding: 10rem 1rem;
 }
 
 .op__testimonial-box {
@@ -186,7 +211,7 @@ body {
 }
 
 .op__testimonial-box h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -195,6 +220,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .op__testimonial-container {
+    padding: 5rem 1rem;
+  }
   .op__testimonial-box {
     text-align: center;
   }
@@ -206,7 +234,7 @@ body {
 
 /* Call to action */
 .op__cta-container {
-  padding: 5rem 1rem;
+  padding: 10rem 1rem;
 }
 
 .op__cta-box {
@@ -218,7 +246,10 @@ body {
   padding: 2rem 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  .op__cta-container {
+    padding: 5rem 1rem;
+  }
   .op__cta-box {
     flex-direction: column;
     align-items: flex-start;
