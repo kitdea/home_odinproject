@@ -137,13 +137,20 @@ body {
 .op__hero-button {
   font-size: 1.2rem;
   color: #000000;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
+  background-color: #fff;
+  padding: 1rem 3rem;
   border-radius: 0.8rem;
   border: none;
   margin-top: 1rem;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.op__hero-button:hover {
+  background-image: linear-gradient(to top, #283048 0%, #859398  51%, #283048  100%); /* change the direction of the change here */
+  color: #fff;
+}
+         
 
 /* Projects Section */
 .op__listbox-container {
@@ -164,7 +171,7 @@ body {
 
 .op__listbox-title {
   padding: 0 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -173,7 +180,7 @@ body {
   height: 200px;
   box-shadow: 5px 5px 10px #1f293756;
   border-radius: 1rem;
-  transition: transform .3s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .op__listbox-box:hover img {
