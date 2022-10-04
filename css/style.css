@@ -71,8 +71,6 @@ body {
 
 .op__icon-open i {
   font-size: 1.6rem;
-  /* width: 25px;
-  height: 25px; */
   margin: 1rem;
   cursor: pointer;
 }
@@ -86,15 +84,38 @@ body {
     display: block;
   }
 
-  .op__hamburger-list {
+  /* .op__hamburger-list {
     content: '';
-    /* display: block; */
     position: absolute;
-    right: 4rem;
+    right: 0;
     top: 80px;
     color: #283048;
     background-color: #fff;
-    width: 80%;
+    width: 100%;
+    transition: all .3s ease-in-out;
+  } */
+  .op__hamburger-list {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .op__hamburger-list li {
+    font-size: 1.4rem;
+    color: #818181;
+    margin: 1rem 0;
+    transition: all .3s;
+  }
+
+  .op__hamburger-list li:hover {
+    color: #f1f1f1;
   }
 }
 

@@ -125,14 +125,15 @@
 
 <script>
   function hMenu() {
-    var menuIcon = document.getElementById("open");
-    if (menuIcon.style.display === "block") {
-      menuIcon.style.display = "none";
-    } else {
-      menuIcon.style.display = "block";
-    }
-  }
+    let menuIcon = document.getElementById("open");
+      if (menuIcon.style.display === "none") {
+        menuIcon.style.display = "block";
+      } else {
+        menuIcon.style.display = "none";
+      }
 
+    console.log(menuIcon);
+  }
 
 </script>
 </body>
