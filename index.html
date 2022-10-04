@@ -105,7 +105,7 @@
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium!</p>
         </div>
         <div class="op__cta-box-btn">
-          <button>Sign up</button>
+          <button class="op__hero-button">Sign up</button>
         </div>
       </div>
     </div>
@@ -125,13 +125,17 @@
 
 <script>
   function hMenu() {
-    var x = document.getElementById("open");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    var menuIcon = document.getElementById("open");
+    if (menuIcon.style.display === "block") {
+      menuIcon.style.display = "none";
     } else {
-      x.style.display = "block";
+      menuIcon.style.display = "block";
     }
   }
+
+
+
+
 </script>
 </body>
 </html>
